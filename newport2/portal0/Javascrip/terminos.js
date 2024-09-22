@@ -30,7 +30,7 @@ function toggleButtonState() {
 // Redirigir al usuario al formulario inicio.html si aceptó los términos
 accessButton.addEventListener("click", function() {
     if (acceptCheckbox.checked) {
-        window.location.href = "logeo.html";
+        window.location.href = "/newport2/portal0/logeo.html";
     } else {
         alert("Debes aceptar los términos y condiciones para ingresar.");
     }

@@ -110,7 +110,7 @@ document.getElementById("acces-button").addEventListener("click", function() {
     validarTodosLosCampos();
 
     if (campos.username && campos.password && verificacionInput.value.length === 4) {
-        window.location.href = "inicio.html";
+        window.location.href = "/newport2/portal0/inicio.html";
     } else {
         formularioMensaje.classList.add('formulario__mensaje-activo');
         setTimeout(() => {
