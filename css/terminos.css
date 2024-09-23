@@ -202,7 +202,7 @@ background-color:var(--for-color)
 
 
 
-@media (max-width: 1800px) {
+@media (max-width: 1000px) {
   .body {
     display: flex;
     justify-content: center;
@@ -212,7 +212,7 @@ background-color:var(--for-color)
     background: pink;
   }
   .container {
-    width: 70%; 
+    width: 100%; 
     height: auto; 
     max-width: 100%; 
     margin: 0;
