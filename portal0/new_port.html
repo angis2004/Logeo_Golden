@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logeo New Port</title>
+    <link rel="stylesheet" href="/css/newport-logeo.css">
+
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+    crossorigin="anonymous"
+  />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+
+
+
+<body class="login-body">
+    <div class="login-container">
+      <div class="icon-txt">
+      <div class="login-text-wifi">Acceso Wi-fi</div>
+      <div class="login-icon-container">
+        <img src="./img/PORTADA-PORTAL-WIFI.jpg" alt="login-icon" class="login-icon" />
+      </div>
+    </div>
+  
+      <div class="login-text">Por favor ingrese su usuario y contraseña</div>
+      <form action="" class="formulario" id="formulario">
+        <div class="input-group" id="grupo__username">
+          <div class="input-group-text">
+            <img src="./img/usuario.png" alt="username-icon" class="input-icon" />
+          </div>
+          <input id="username" name="username" type="text" class="form-control bg-light" placeholder="Username" />
+          <i class="formulario__validacion-estado fas fa-times-circle"></i>
+          <p class="formulario__input-error">El usuario debe tener entre 4 y 10 caracteres, y solo puede contener letras,
+            números, @.</p>
+        </div>
+  
+  
+  
+        <div class="input-group mt-1" id="grupo__password">
+          <div class="input-group-text">
+            <img src="./img/password.png" alt="password-icon" class="input-icon" />
+          </div>
+          <input  class="form-control"  id="password" name="password" class="form-control" type="password" placeholder="Password" />
+          <i class="formulario__validacion-estado" ></i>
+          <p class="formulario__input-error">La contraseña debe tener entre 4 y 10 caracteres.</p>
+        </div>
+  
+
+
+<div class="input-group mt-1" id="grupo__verificacion">
+  <input id="verificacion" class="form-control" name="verificacion" placeholder="Verificación" />
+  <button id="generarCodigo" class="generar-codigo" type="button">Generar Código</button>
+  <i class="formulario__validacion-estado"></i>
+  <p class="formulario__input-error">El código debe ser mínimo de 4 dígitos.</p>
+</div>
+
+        <div class="forgot-password">
+          <a href="#" class="forgot-password-link">¿Olvidaste tu contraseña?</a>
+        </div>
+  
+
+        <div class="formulario__mensaje" id="formulario__mensaje">
+      <script src="https://cdn.lordicon.com/lordicon.js"></script>
+      <lord-icon src="https://cdn.lordicon.com/usownftb.json" trigger="hover"stroke="bold" colors="primary:black,secondary:black">
+      </lord-icon>Error: Por favor rellena el formulario correctamente.</div>
+
+
+          <div class="formulario__grupo formulario__grupo-btn-enviar">
+            <button type="submit" class="acceso" id="acces-button">Iniciar Sesion</button>
+            <div class="formulario__mensaje-exito" id="formulario__mensaje-exito">
+
+              <script src="https://cdn.lordicon.com/lordicon.js"></script>
+              <lord-icon src="https://cdn.lordicon.com/cgzlioyf.json" trigger="in" state="in-reveal"></lord-icon>
+              <p>Formulario enviado exitosamente!</p>
+            </div>
+      </form>
+  
+      <script src="/portal0/Javascrip/formulario.js"></script>
+     
+  
+  
+      <div class="signup-container mt-1">
+        <div>¿No tienes una cuenta?</div>
+        <a href="#" class="signup-link">Registrar</a>
+      </div>
+      <div class="divider-container p-3">
+        <div class="divider">
+          <span>o</span>
+        </div>
+      </div>
+      <div class="redes-login-container">
+        <div class="redes-login-btn">
+          <img src="./img/GOOGLE.png" class="redes-icon" />
+          <img src="./img/FACEBOOK.png" class="redes-icon" />
+          <img src="./img/TWITTER.png" class="redes-icon" />
+        </div>
+      </div>
+    </div>
+  </body>
+
+
+
+
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #004a94;
+    --primary-color: #004a94; 
     --secundary-color: #edededff;/*tipo amarillento*/
     --third-color: #ffff;
     --for-color: #99712a;
@@ -91,7 +91,7 @@ background-color: var(--primary-color);
 
 
 .footer{
-    background-color: #004a94;
+    background-color: var(--primary-color);
     color: #fff;
     width: 100%;
     padding: 35px ;
@@ -99,7 +99,7 @@ background-color: var(--primary-color);
     }
 
 .footer-top {
-    background-color: #004a94;
+    background-color: var(--primary-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -124,6 +124,7 @@ background-color: var(--primary-color);
     padding: 0 6.2%;
     background: url(./img/bg-footer-h.jpg) ;
     box-sizing: border-box;
+    text-align: center;
 }
 
 .footer-contact {
@@ -151,7 +152,7 @@ background-color: var(--primary-color);
 }
 
 .footer-copy {
-    background-color: #004a94;
+    background-color: var(--primary-color);
     padding: 10px 20px;
     text-align: center;
     
@@ -169,6 +170,31 @@ background-color: var(--primary-color);
 }
 
 .footer-copy-left a:hover {
-    color: #99712a;
+    color: var(--for-color);
     /* Cambia el color de fondo al pasar el mouse */
+}
+
+/*/*
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+    .footer-top {
+        flex-direction: column; /* Cambia a columna */
+        align-items: flex-start; /* Alinea al inicio */
+    }
+
+    .footer-ctn {
+        flex-direction: column; /* Cambia a columna */
+        align-items: center; /* Centra los elementos */
+    }
+
+    .footer-lists {
+        width: 100%; /* Asegura que ocupe todo el ancho */
+        padding: 0; /* Elimina padding extra */
+    }
+
+    .footer-contact {
+        margin: 10px 0; /* Añade margen vertical para separación */
+        text-align: center; /* Centra el texto */
+    }
 }
