@@ -150,7 +150,7 @@ input[type="checkbox"]{
 
 input[type="checkbox"]:after{
     
-    font-family: "Font Awesome 5 Free";
+      font-family: "Font Awesome 5 Free";
      content:"\f00c" ;
      color: white;
      display: none;

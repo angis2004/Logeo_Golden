@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
-<<<<<<< HEAD
+
 
 declineCheckbox.addEventListener("change", function() {
     if (declineCheckbox.checked) {
@@ -72,6 +72,3 @@ accessButton.addEventListener("click", function() {
         alert("Debes aceptar los términos y condiciones para ingresar.");
     }
 });
-
-=======
->>>>>>> 5afca60d768e154629c729f575d80b817dcbbd65

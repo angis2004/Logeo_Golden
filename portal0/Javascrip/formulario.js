@@ -1,10 +1,6 @@
-
-
-
 // Seleccionar el formulario y los inputs
 const formulario = document.getElementById('formulario');
 const inputs = document.querySelectorAll('#formulario input');
-
 
 // Expresiones regulares para validar los campos
 const expresiones = {
@@ -77,94 +73,3 @@ const validarTodosLosCampos = () => {
         validarFormulario({ target: input });
     });
 };
-
-
-
-
-// Manejar el evento de submit del formulario
-formulario.addEventListener('submit', (e) => {
-    e.preventDefault();
-<<<<<<< HEAD
-
-    // Validar todos los campos antes del submit osea boton 
-=======
-    // Validar todos los campos antes del submit
->>>>>>> 5afca60d768e154629c729f575d80b817dcbbd65
-    validarTodosLosCampos();
-    console.log("datos-validados");
-
-    const terminos = document.getElementById('terminos');
-    if (campos.username && campos.password && campos.verificacion ) {
-        formulario.reset();
-        document.querySelectorAll('.input-group-correcto').forEach((icono) => {
-            icono.classList.remove('input-group-correcto');
-        });
-    } else {
-        document.getElementById('formulario__mensaje').classList.add('formulario__mensaje-activo');
-        setTimeout(() => {
-            document.getElementById('formulario__mensaje').classList.remove('formulario__mensaje-activo');
-        }, 3000);
-    }
-});
-
-// Funciones para el popup
-document.getElementById('acces-button-login').addEventListener('click', function() {
-    document.getElementById('popup-terminos').style.display = 'block'; // Muestra el popup
-    console.log('Popup mostrado');
-});
-
-document.getElementById('close-popup').addEventListener('click', function() {
-    document.getElementById('popup-terminos').style.display = 'none'; // Cierra el popup
-    console.log('Popup cerrado');
-});
-
-document.getElementById('acces-button-submit').addEventListener('click', function() {
-    const acceptCheckbox = document.getElementById('accept-checkbox');
-    
-    if (acceptCheckbox.checked) {
-        window.location.href = 'inicio.html'; // Redirige a inicio.html si el checkbox está marcado
-    } else {
-        console.log('Checkbox de aceptación no está marcado, mostrar alerta.');
-        alert('Debes aceptar los términos y condiciones para continuar.');
-    }
-});
-
-
-
-
-
-// // Botón de acceso
-// document.getElementById("acces-button").addEventListener("click", function() {
-//     const verificacionInput = document.getElementById("verificacion");
-//     const formularioMensaje = document.getElementById('formulario__mensaje');
-
-//     // Validar todos los campos antes de redirigir
-//     validarTodosLosCampos();
-
-//     if (campos.username && campos.password && verificacionInput.value.length === 4) {
-//         window.location.href = "inicio.html";
-//         console.log("no aparece");
-
-
-
-
-//Botón de acceso
-
-
-// document.getElementById("acces-button").addEventListener("click", function() {
-//     const verificacionInput = document.getElementById("verificacion");
-//     const formularioMensaje = document.getElementById('formulario__mensaje');
-
-//     // Validar todos los campos antes de redirigir
-//     validarTodosLosCampos();
-
-//     if (campos.username && campos.password && verificacionInput.value.length === 4) {
-//         window.location.href = "/portal0/inicio.html";
-
-//     } else {
-//         formularioMensaje.classList.add('formulario__mensaje-activo');
-//         setTimeout(() => {
-//             formularioMensaje.classList.remove('formulario__mensaje-activo');
-//         }, 3000);
-//     }
-// });
