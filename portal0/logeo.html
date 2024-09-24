@@ -82,8 +82,10 @@
       </lord-icon>Error: Por favor rellena el formulario correctamente.</div>
 
 
+
           <div class="formulario__grupo formulario__grupo-btn-enviar">
-            <button type="submit" class="acceso" id="acces-button">Iniciar Sesion</button>
+            <button id="acces-button-login" class="acceso">Iniciar Sesión</button>
+
             <div class="formulario__mensaje-exito" id="formulario__mensaje-exito">
 
               <script src="https://cdn.lordicon.com/lordicon.js"></script>
@@ -91,8 +93,55 @@
               <p>Formulario enviado exitosamente!</p>
             </div>
       </form>
-  
       <script src="/portal0/Javascrip/formulario.js"></script>
+  
+      
+      <div id="popup-terminos" class="popup">
+        <button id="close-popup" class="close-btn">X</button> <!-- Botón para cerrar -->
+        <div class="login-container">
+            <div class="login-icon-container">
+                <script src="https://cdn.lordicon.com/lordicon.js"></script>
+                <lord-icon
+                    src="https://cdn.lordicon.com/vistbkts.json"
+                    trigger="hover"
+                    colors="primary:#107c91,secondary:#16a9c7"
+                    style="width:10rem;height:10rem">
+                </lord-icon>
+            </div>
+            <div class="login-text">Términos y Condiciones</div>
+            <div class="input-group mt-4">
+                <div class="input-group-text">
+                    <div class="container-center">
+                        <div class="title-container">Acceder a la red pública de la empresa desde su dispositivo inalámbrico</div>
+                        <div class="text-container">
+                            <iframe src="./aup.html" scrolling=""></iframe>
+                        </div>
+    
+                        <div class="options-container">
+                          <div class="remember-me">
+                              <input id="accept-checkbox" class="form-check-input" type="checkbox" />
+                              <div class="remember-text">Acepto</div>
+                              
+                              <input id="decline-checkbox" class="form-check-input" type="checkbox" />
+                              <div class="remember-text">No Acepto</div>
+                          </div>
+                      </div>
+                      
+                      <button id="acces-button-submit" class="acceso2" disabled>Ingresar</button>
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/portal0/Javascrip/terminos.js"></script>
+  
+
+
+
+
+
+    
      
   
   
