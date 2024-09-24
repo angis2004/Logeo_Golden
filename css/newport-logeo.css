@@ -1,12 +1,19 @@
 :root {
-    --primary-color: #004a94;
+   
     --secundary-color: #edededff;/*tipo amarillento*/
     --third-color: #ffff;
-    --for-color: #99712a;
     --text-color:  #6c757d;
     --enlaces: #17a2b8;
     --text-container :#0000;
     --error:#bb2929;
+    --amarillo-claro: rgb(248,194,0);
+    --amarillo-oscuro: rgb(239,179,19);
+    --azul-claro: rgb(0,95,158);
+    --azul-oscuro: rgb(0,67,121);
+    --prueba-fondo: #618DAA;
+    --background:#a2acbd;
+  
+
 
 }
 
@@ -16,20 +23,19 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: var(--third-color);
+    background-color: var(--prueba-fondo);
  
 }
 
 .login-container {
  
 
-    background: rgb(218, 221, 226);
     background: linear-gradient(to bottom, rgba(218, 221, 226, 1) 49%, rgba(255, 255, 255, 1) 75%);
     padding: 1.25rem;
     border-radius: 0.75rem;
-    background-color:  var(--text-color);
+    background-color:  var(--background);
     font-family: "PT Sans", sans-serif;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    /* box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); */
     width: 25rem;
 }
 
@@ -38,17 +44,33 @@
 .login-icon-container {
     display: flex;
     justify-content: center;
+   
+    
+   
+
 }
 
 .login-icon {
-    height: 100%;
-    WIDTH: 100%;
+    height:90%;
+    WIDTH: 90%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    box-sizing : border-box;
+    box-shadow: 10px 5px 5px var(--azul-oscuro), -7px -7px 10px var(--azul-oscuro)
 }
+
+
 
 .icon-txt {
-background-color: var(--primary-color);
+background-color: var(--azul-claro);
+border-radius: 3px;
 
-}
+
+}  
+
+
 .login-text-wifi {
     text-align: center;
     font-family: "PT Sans", sans-serif;
@@ -58,14 +80,17 @@ background-color: var(--primary-color);
     
 }
 
+
 .login-text { /*ingrese ususairo y contra*/
-    text-align: center;
+ text-align: center;
     margin-top: 1rem;
     margin-bottom: 0.5rem;
     font-family: "PT Sans", sans-serif;
     font-weight: bold;
-   
-}
+} 
+ 
+
+
 .input-icon {
     height: 1rem;
 }
@@ -73,6 +98,11 @@ background-color: var(--primary-color);
 /* Input styling */
 .input-group {
     margin-top: 1rem;
+
+}
+
+.input-group-text {
+    border: 2px solid var(--azul-oscuro)!important;
 
 }
 
@@ -87,22 +117,30 @@ background-color: var(--primary-color);
 }
 
 
+
+.forgot-password{
+    margin-top: 1rem;
+    
+    }
+    
+
 /*Botones */
 
 .generar-codigo{
-    background-color: var(--primary-color);
+    background-color: var(--azul-oscuro);
     color: var(--third-color);
     font-weight: bold;
     cursor: pointer;
+    border: 3px solid var(--azul-oscuro);
+   
 }
 .generar-codigo:hover {
-    background-color:var(--for-color);
+    background-color:var(--azul-claro);
    
 }
 
 .acceso {/*Iniciar sesion*/
-    background-color: var(--primary-color);
-    background-color: var(--primary-color);
+    background-color: var(--azul-oscuro);
     padding: 0.25rem;
     border-radius: 0.75rem;
     color: var(--text-color);
@@ -115,8 +153,9 @@ background-color: var(--primary-color);
     
 }
 
-.acceso:hover {
-    background-color:var(--for-color);
+.acceso:hover {/*iniciar sesion*/
+    background-color:var(--azul-claro);
+    border: 3px solid var(--azul-oscuro);
     /* Cambia el color de fondo al pasar el mouse */
 }
 
@@ -162,20 +201,6 @@ background-color: var(--primary-color);
 }
 
 
-
-
-/* Sobrescribiendo estilos de .form-control */
-.form-control {
-    border: 1px solid var(--primary-color)!important; 
-    background-color: var(--third-color) !important;
-  }
-  
-
-  .input-group-text {
-    border: 1px solid var(--primary-color) !important; 
-    background-color:var(--third-color) !important; 
-  }
-  
   .input-icon {
     height: 1rem; /* Ajuste de tamaño del ícono */
   }
@@ -210,7 +235,7 @@ background-color: var(--primary-color);
 
 /* Estilo para el estado incorrecto */
 .input-group-incorrecto .form-control {
-    border: 3px solid var(--error);
+    border: 2px solid var(--error);
 }
 
 
@@ -228,14 +253,6 @@ background-color: var(--primary-color);
 }
 
 
-.formulario__validacion-estado{
-    position:absolute;
-    right: 10px;
-    bottom: 10px;
-    z-index: 100;
-    font-size: 16px;
-    opacity: 0;
-}
 /* 
 PARA EL ERROR AHHHHH */
 
@@ -257,23 +274,7 @@ PARA EL ERROR AHHHHH */
 
 /*para que se muestre*/
 
-.formulario__mensaje-activo{
-    display: block;
-}
 
-
-.formulario__mensaje-exito {
-	font-size: 14px;
-	background-color: rgb(123, 204, 123);
-    color: var(--text-container);
-    text-align: center;
-    border-radius: 5px;
-	display: none;
-}
-
-.formulario__mensaje-exito-activo {
-	display: block;
-}
 
 /* ----- -----  Estilos para Validacion ----- ----- */
 
