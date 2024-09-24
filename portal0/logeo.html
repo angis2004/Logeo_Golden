@@ -84,16 +84,36 @@
 
           <div class="formulario__grupo formulario__grupo-btn-enviar">
             <button type="submit" class="acceso" id="acces-button">Iniciar Sesion</button>
-            <div class="formulario__mensaje-exito" id="formulario__mensaje-exito">
+            
 
-              <script src="https://cdn.lordicon.com/lordicon.js"></script>
-              <lord-icon src="https://cdn.lordicon.com/cgzlioyf.json" trigger="in" state="in-reveal"></lord-icon>
-              <p>Formulario enviado exitosamente!</p>
+
+                 <!-- popUP -->
+            <div class="overlay" id="overlay">
+              <div class="popup" id="popup">
+                <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+                <h3>TERMINOS Y CONDICIONES</h3>
+                        <script src="https://cdn.lordicon.com/lordicon.js"></script>
+                        <lord-icon src="https://cdn.lordicon.com/vistbkts.json" trigger="hover" 
+                        colors="primary:#107c91,secondary:#16a9c7" style="width:10rem;height:10rem"></lord-icon>
+                        <div class="title-container">Accede a la red Pública de la
+                              empresa desde su dispositivo
+                        <iframe src="./aup.html" scrolling="yes"></iframe>
+        
+                <form action="">
+                            <input type="submit" id="accept-button" class="btn-submit" value="Acepto">
+                        </form>
+              </div>
             </div>
-      </form>
-  
+          </div>
+        
+        <!-- Asegúrate de cargar el script al final -->
+      
+
+        <!-- fin popUP -->
+
       <script src="/portal0/Javascrip/formulario.js"></script>
-     
+      
+      <script src="/portal0/Javascrip/popup.js"></script>
   
   
       <div class="signup-container mt-1">

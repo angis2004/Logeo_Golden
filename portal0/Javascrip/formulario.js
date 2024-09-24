@@ -79,11 +79,12 @@ const validarTodosLosCampos = () => {
 formulario.addEventListener('submit', (e) => {
     e.preventDefault();
 
-    // Validar todos los campos antes del submit
+    // Validar todos los campos antes del submit osea boton 
     validarTodosLosCampos();
+    console.log("datos-validados");
 
     const terminos = document.getElementById('terminos');
-    if (campos.username && campos.password && campos.verificacion && terminos.checked) {
+    if (campos.username && campos.password && campos.verificacion ) {
         formulario.reset();
 
         document.querySelectorAll('.input-group-correcto').forEach((icono) => {
@@ -99,22 +100,23 @@ formulario.addEventListener('submit', (e) => {
 });
 
 
-// Botón de acceso
 
 
-document.getElementById("acces-button").addEventListener("click", function() {
-    const verificacionInput = document.getElementById("verificacion");
-    const formularioMensaje = document.getElementById('formulario__mensaje');
+// // Botón de acceso
+// document.getElementById("acces-button").addEventListener("click", function() {
+//     const verificacionInput = document.getElementById("verificacion");
+//     const formularioMensaje = document.getElementById('formulario__mensaje');
 
-    // Validar todos los campos antes de redirigir
-    validarTodosLosCampos();
+//     // Validar todos los campos antes de redirigir
+//     validarTodosLosCampos();
 
-    if (campos.username && campos.password && verificacionInput.value.length === 4) {
-        window.location.href = "/portal0/inicio.html";
-    } else {
-        formularioMensaje.classList.add('formulario__mensaje-activo');
-        setTimeout(() => {
-            formularioMensaje.classList.remove('formulario__mensaje-activo');
-        }, 3000);
-    }
-});
+//     if (campos.username && campos.password && verificacionInput.value.length === 4) {
+//         window.location.href = "inicio.html";
+//         console.log("no aparece");
+//     } else {
+//         formularioMensaje.classList.add('formulario__mensaje-activo');
+//         setTimeout(() => {
+//             formularioMensaje.classList.remove('formulario__mensaje-activo');
+//         }, 3000);
+//     }
+// });

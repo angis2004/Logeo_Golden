@@ -30,8 +30,9 @@ function toggleButtonState() {
 // Redirige al usuario al formulario inicio.html si aceptó los términos
 accessButton.addEventListener("click", function() {
     if (acceptCheckbox.checked) {
-        window.location.href = "/portal0/logeo.html";
+        window.location.href = "/portal0/inicio.html";
     } else {
         alert("Debes aceptar los términos y condiciones para ingresar.");
     }
 });
+
