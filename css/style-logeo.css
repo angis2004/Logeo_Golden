@@ -6,7 +6,7 @@
     --text-color:  #6c757d;
     --enlaces: #17a2b8;
     --text-container :#0000;
-    --error: #ecb7c3;
+    --error: #be133b;
 
 }
 
@@ -239,15 +239,17 @@ margin-top: 1rem;
 /* Estilo para mostrar los errores */
 .formulario__input-error {
 	
-	margin-bottom: 1rem;
+	margin-bottom: 5px;
 	display: none;
     color: var(--error);
- 
+    text-align: center;
 }
 
 .formulario__input-error-activo {
 	display: block;
 }
+
+
 
 
 .formulario__validacion-estado{
@@ -264,7 +266,6 @@ PARA EL ERROR AHHHHH */
 
 .formulario__mensaje{
    
-   
     display: flex;
 	font-size: 14px;
     color: #333;
@@ -273,8 +274,10 @@ PARA EL ERROR AHHHHH */
     border-radius: 5px;
     font-weight: 550;
     padding: 5px;
+    /* para que este oculto */
+    display: none;
+    
 }
-
 
 .text-error{
     display: inline-block;
@@ -285,7 +288,7 @@ PARA EL ERROR AHHHHH */
 /*para que se muestre*/
 
 .formulario__mensaje-activo{
-    display: inline-block;
+    display: block;
 }
 
 
@@ -297,7 +300,6 @@ PARA EL ERROR AHHHHH */
     border-radius: 5px;
 	display: none;
 }
-
 
 .formulario__mensaje-exito-activo {
 	display: block;
