@@ -42,9 +42,79 @@ img, svg {
     border-radius: 0.75rem;
     background-color:  var(--text-color);
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-    width: 40rem;  /*ancho del contenido*/
+    width: 41rem;  /*ancho del contenido*/
     /* height: 50%;  alto del contendio */
 }
+
+/**/
+.container-text {
+    background-color: var(--primary-color);
+    display : flex;
+    /* width:700px; */
+    height:40px;
+    color:#fff;
+    font-size:40px; /*3 rem*/
+    line-height:40px;
+    /* background: red; */
+    color:black;
+    
+    
+    /*para que esta centrado absolutamente */
+    /* position:absolute; */
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    margin:auto;
+    
+    overflow:hidden; 
+
+
+
+    /*DIESÑO DEL TXTO DEL TITULO /*/
+    text-align: center;
+    font-family: "Nerko One", cursive;
+    font-weight: 400;
+    font-size: 3rem;
+    color:var(--secundary-color) ;
+
+
+    }
+
+    .animacion{
+        list-style:none;
+        padding-left:10px ;
+        animation:cambiar 7s infinite;
+       
+        }
+        
+       
+        ul,p{
+        margin:0;
+    
+        }
+        
+        /*ANIAMCION */
+        @keyframes cambiar {
+        /*EL espacio q hay entre ellos */
+        0%{ margin-top:0;}
+        20%{ margin-top:0;}
+        
+        
+        /*Esta sumando de 25 en 25*/
+        25%{ margin-top:-40px;}
+        50%{ margin-top:-40px;}
+        
+        
+        55%{ margin-top:-80px;}
+        80%{ margin-top:-80px;}
+        
+        85%{ margin-top:-40px;}
+        95%{ margin-top:-40px;}
+        
+        100%{ margin-top:-0;}
+        }
+        
 
 
 /* Image and text styling */
@@ -58,18 +128,15 @@ img, svg {
     WIDTH: 100%;
 }
 
-.icon-txt {/*fondo del titulo*/
-background-color: var(--primary-color);
-}
+
+
+
+
+
 
 
 .login-text-title {
-        text-align: center;
-        font-family: "Nerko One", cursive;
-        font-weight: 400;
-        font-size: 3rem;
-        margin: 0;
-        color:var(--secundary-color) ;
+         background-color: var(--primary-color);
     
 }
 
@@ -115,7 +182,7 @@ background-color: var(--primary-color);
 }
 
 .footer-img img {
-    max-width: 120px;
+    max-width: 150px;
     width: 100%;
 }
 
@@ -133,7 +200,7 @@ background-color: var(--primary-color);
     font-size: 1.2rem;
 }
 
-.footer-contact ul {
+.footer-contact .ul {
     list-style-type: none;
     padding: 0;
 }

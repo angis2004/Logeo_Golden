@@ -7,7 +7,7 @@
     --enlaces: #17a2b8;
     --text-container :#0000;
     --error: #be133b;
-
+    --fondo: rgb(192,190,219);
 }
 
 /* Body and container styling */
@@ -16,7 +16,7 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: var(--third-color);
+    background-color: var(--fondo);
  
 }
 
@@ -249,9 +249,6 @@ margin-top: 1rem;
 	display: block;
 }
 
-
-
-
 .formulario__validacion-estado{
     position:absolute;
     right: 10px;
@@ -260,8 +257,7 @@ margin-top: 1rem;
     font-size: 16px;
     opacity: 0;
 }
-/* 
-PARA EL ERROR AHHHHH */
+/* PARA EL ERROR  */
 
 
 .formulario__mensaje{
@@ -292,7 +288,7 @@ PARA EL ERROR AHHHHH */
 }
 
 
-.formulario__mensaje-exito {
+/* .formulario__mensaje-exito {
 	font-size: 14px;
 	background-color: rgb(123, 204, 123);
     color: var(--text-container);
@@ -303,7 +299,7 @@ PARA EL ERROR AHHHHH */
 
 .formulario__mensaje-exito-activo {
 	display: block;
-}
+} */
 
 /* ----- -----  Estilos para Validacion ----- ----- */
 

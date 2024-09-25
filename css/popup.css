@@ -18,8 +18,7 @@
 
   .btn-submit {/*Acepto*/
 	background-color: var(--primary-color);
-	background-color: var(--primary-color);
-	padding: 0.5rem;
+	padding: 0.1rem;
 	border-radius: 0.75rem;
 	color: var(--text-color);
 	width: 100%;
@@ -81,22 +80,33 @@
 	display: block;
 	text-align: right;
 	transition: .3s ease all;
-	color: #BBBBBB;
+	color: #a39f9f;
 }
 
 .popup .btn-cerrar-popup:hover {
 	color: #000;
 }
 
+.popup h3 {
+	font-size: 28px;
+	font-weight: 600;
+	margin-bottom: 10px;
+	/* opacity: 0; */
+}
 
+
+.popup form .title-container {
+	opacity: 0;
+}
 
 /* ------------------------- */
 /* ANIMACIONES */
 /* ------------------------- */
 .popup.active {	transform: scale(1); opacity: 1; }
-.popup.active .lord-icon { animation: entradaTitulo .8s ease .5s forwards; }
-.popup.active .title-container { animation: entradaSubtitulo .8s ease .5s forwards; }
-.popup.active .popup { animation: entradaInputs 1s linear 1s forwards; }
+.popup.active .h3 { animation: entradaTitulo .8s ease .5s forwards; }
+.popup.active .lord-icon { animation: entradaSubTitulo .8s ease .5s forwards; }
+.popup.active .title-container{ animation: entradaInputs 1s linear 1s forwards; }
+/* .popup.active .contenedor-poup{ animation: entradaInputs 1s linear 1s forwards; } */
 
 @keyframes entradaTitulo {
 	from {
@@ -126,3 +136,5 @@
 	from { opacity: 0; }
 	to { opacity: 1; }
 }
+
+/*para dispositivos ?*/
