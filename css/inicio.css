@@ -1,7 +1,7 @@
 :root {
     --primary-color: #004a94; 
     --secundary-color: #edededff;/*tipo amarillento*/
-    --third-color: #ffff;
+    --blanco: #ffff;
     --for-color: #99712a;
     --text-color:  #6c757d;
     --enlaces: #17a2b8;
@@ -38,46 +38,25 @@ img, svg {
 
     background: rgb(218, 221, 226);
     background: linear-gradient(to bottom, rgba(218, 221, 226, 1) 49%, rgba(255, 255, 255, 1) 75%);
-    padding: 1rem;
+    padding: 0.5rem;
     border-radius: 0.75rem;
     background-color:  var(--text-color);
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
     width: 41rem;  /*ancho del contenido*/
-    /* height: 50%;  alto del contendio */
 }
 
 /**/
 .container-text {
     background-color: var(--primary-color);
     display : flex;
-    /* width:700px; */
     height:40px;
-    color:#fff;
+    color:var(--blanco);
     font-size:40px; /*3 rem*/
     line-height:40px;
-    /* background: red; */
-    color:black;
-    
-    
     /*para que esta centrado absolutamente */
-    /* position:absolute; */
-    top:0;
-    right:0;
-    bottom:0;
-    left:0;
-    margin:auto;
-    
     overflow:hidden; 
-
-
-
-    /*DIESÑO DEL TXTO DEL TITULO /*/
-    text-align: center;
     font-family: "Nerko One", cursive;
-    font-weight: 400;
-    font-size: 3rem;
-    color:var(--secundary-color) ;
-
+    margin-top: 1rem;
 
     }
 
@@ -85,6 +64,7 @@ img, svg {
         list-style:none;
         padding-left:10px ;
         animation:cambiar 7s infinite;
+        font-size: 3rem;
        
         }
         
@@ -114,7 +94,62 @@ img, svg {
         
         100%{ margin-top:-0;}
         }
-        
+
+      
+
+/* Ocultar la animación móvil por defecto */
+.animacion-movil, .login-text-movil {
+    display: none;
+    color:var(--secundary-color);
+    font-size: 3rem;
+}
+
+/* Media query para dispositivos móviles */
+@media (max-width: 700px) {
+    /* Oculta contenido para pantallas grandes en móviles */
+    .animacion, .login-text-title {
+        display: none;
+         }
+
+    /* Muestra el contenido para móviles */
+    .login-text-movil {
+        display: block;
+    }
+
+    .animacion-movil {
+        display: block;
+        list-style: none;
+        padding-left: 10px;
+        animation: cambiar-movil 7s infinite;
+    }
+}
+
+
+
+@keyframes cambiar-movil {
+    0% { margin-top: 0; }
+    20% { margin-top: 0; }
+    25% { margin-top: -40px; }
+    50% { margin-top: -40px; }
+    55% { margin-top: -80px; }
+    80% { margin-top: -80px; }
+    85% { margin-top: -40px; }
+    95% { margin-top: -40px; }
+    100% { margin-top: 0; }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* Image and text styling */
@@ -128,15 +163,14 @@ img, svg {
     WIDTH: 100%;
 }
 
-
-
-
-
-
-
-
 .login-text-title {
-         background-color: var(--primary-color);
+
+    background-color: var(--primary-color);
+    font-weight: 100;
+    font-size: 3rem;
+    color:var(--blanco) ;
+    padding-left: 40px;
+
     
 }
 
@@ -241,10 +275,15 @@ img, svg {
     /* Cambia el color de fondo al pasar el mouse */
 }
 
-/*/*
+
+
 
 /* Ajustes para pantallas pequeñas */
 @media (max-width: 768px) {
+
+    .footer{
+        width: 100%;
+    }
     .footer-top {
         flex-direction: column; /* Cambia a columna */
         align-items: flex-start; /* Alinea al inicio */
