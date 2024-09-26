@@ -7,7 +7,7 @@
     --enlaces: #17a2b8;
     --text-container :#0000;
     --error:#bb2929;
-
+    --footer:#EDEDED;
 }
 
 
@@ -28,7 +28,7 @@ img, svg {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: var(--third-color);
+    background-color: var(--blanco);
     
  
 }
@@ -187,120 +187,73 @@ img, svg {
 
 
 
+/*:::::Pie de Pagina*/
 
-/* Footer Container  TECNICA STICKY FOOTER*/
 
 
-.footer{
-    background-color: var(--primary-color);
-    color: #fff;
+.pie-pagina{
     width: 100%;
-    padding: 35px ;
-    font-size: 1.2rem;
-    }
-
-.footer-top {
-    background-color: var(--primary-color);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
+    background-color: var(--footer);
+    
 }
-
-.footer-ctn {
-    display: flex;
+.pie-pagina .grupo-1{
     width: 100%;
     max-width: 1200px;
-    margin: 0 auto;
-    justify-content: space-between;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:50px;
+    padding: 45px 0px;
 }
-
-.footer-img img {
-    max-width: 150px;
+.pie-pagina .grupo-1 .box figure{
     width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
-.footer-lists {
-    width: 33.5%;
-    padding: 0 6.2%;
-    background: url(./img/bg-footer-h.jpg) ;
-    box-sizing: border-box;
-    text-align: center;
+.pie-pagina .grupo-1 .box figure img{
+    width: 250px;
 }
-
-.footer-contact {
-    flex: 1;
-    margin: 0 20px;
-    font-size: 1.2rem;
+.pie-pagina .grupo-1 .box h2{
+    color:var(--primary-color);
+    margin-bottom: 25px;
+    font-size: 20px;
 }
-
-.footer-contact .ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.footer-contact ul li {
+.pie-pagina .grupo-1 .box p{
+    color:var(--primary-color);
     margin-bottom: 10px;
 }
-
-.footer-contact ul li a {
-    color: #fff;
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
     text-decoration: none;
-}
-
-.footer-contact ul li a:hover {
-    text-decoration: underline;
-}
-
-.footer-copy {
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: var(--blanco);
+    margin-right: 10px;
     background-color: var(--primary-color);
-    padding: 10px 20px;
     text-align: center;
-    
+    transition: all 300ms ease;
+    border-radius: 5px;
 }
-
-.footer-copy-left p {
-    margin: 0;
-    color: #fff;
-}
-
-.footer-copy-left a {
-    color:white;
-    cursor: pointer;
-    
-}
-
-.footer-copy-left a:hover {
+.pie-pagina .grupo-1 .red-social a:hover{
     color: var(--for-color);
-    /* Cambia el color de fondo al pasar el mouse */
 }
-
-
-
-
-/* Ajustes para pantallas pequeñas */
-@media (max-width: 768px) {
-
-    .footer{
-        width: 100%;
-    }
-    .footer-top {
-        flex-direction: column; /* Cambia a columna */
-        align-items: flex-start; /* Alinea al inicio */
-    }
-
-    .footer-ctn {
-        flex-direction: column; /* Cambia a columna */
-        align-items: center; /* Centra los elementos */
-    }
-
-    .footer-lists {
-        width: 100%; /* Asegura que ocupe todo el ancho */
-        padding: 0; /* Elimina padding extra */
-    }
-
-    .footer-contact {
-        margin: 10px 0; /* Añade margen vertical para separación */
-        text-align: center; /* Centra el texto */
+.pie-pagina .grupo-2{
+    background-color: var(red);
+    padding: 15px 10px;
+    text-align: center;
+    color:var(--primary-color);
+}
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+}
+@media screen and (max-width:800px){
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:30px;
+        padding: 35px 0px;
     }
 }

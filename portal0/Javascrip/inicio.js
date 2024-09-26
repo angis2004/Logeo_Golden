@@ -1,16 +1,19 @@
 
 
+// Script para que inicie el  Confeti
+const startConfetti = () => {
+  setTimeout(function () {
+      confetti.start();
+  }, 1000); // 1000 = 1 segundo
+};
 
-document.getElementById('acces-button').addEventListener('click', function() {
-  const username = document.getElementById('username').value;
-  const password = document.getElementById('password').value;
+// Detener confeti después de 5 segundos
+const stopConfetti = () => {
+  setTimeout(function () {
+      confetti.stop();
+  }, 5000);
+};
 
-  if (username === 'angie@newport' && password === '123') {
-      // Redirigir a la página principal
-      window.location.href = 'inicio2.html';
-  } else {
-      // Redirigir a la página de error
-      window.location.href = 'error.html';
-  }
-});
-
+// Llamar a las funciones de inicio y detención
+startConfetti();
+stopConfetti();

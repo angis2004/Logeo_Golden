@@ -6,8 +6,11 @@
     <link rel="icon" type="image/x-icon" href="/assets/logo-vt.svg" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Logueo</title>
+    <title>Inicio</title>
+    <link rel="icon" href="/portal0/img/confeti-logo.png">
     <link rel="stylesheet" href="../css/inicio.css">
+     <!--Iconos-->
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,7 +26,7 @@
                     <ul class="animacion">
                     <li>nuestra Familia</li>
                     <li>nuestra red Wifi</li>
-                    <li>NEW PORT</li>
+                    <li>Golden Palace</li>
                 </ul>
                      <!-- Animación para móviles  -->
                       
@@ -32,12 +35,12 @@
                     <ul class="animacion-movil"> 
                     <li>usuario</li>
                     <li>a la red</li>
-                    <li>newport</li>
+                    <li>golden</li>
                 </ul>
 
             </div>
      
-            <div class="login-text">Gracias por conectarse a nustra red wifi</div>
+            <div class="login-text">Gracias por conectarse a nuestra red wifi</div>
             <form action="" class="formulario" id="formulario">
 
 
@@ -153,67 +156,37 @@
     </div>
     <!-- Script del Confeti -->
     <script src="./Javascrip/confeti.js"></script>
-    <script>
-        // Iniciar confeti después de 1 segundo
-        const start = () => {
-            setTimeout(function () {
-                confetti.start();
-            }, 1000); // 1000 = 1 segundo
-        };
-
-        // Detener confeti después de 5 segundos
-        const stop = () => {
-            setTimeout(function () {
-                confetti.stop();
-            }, 5000);
-        };
-
-        start();
-        stop();
-    </script>
-
+    <script src="./Javascrip/inicio.js"></script>
 
     <!-- Footer -->
-    <footer class="footer">
-        <section class="footer-top">
-            <div class="footer-ctn">
-                <!-- Logo -->
-                <figure class="footer-img">
-                    <img src="./img/logo-footer.png" alt="Logo">
-                </figure>
-
-                <!-- Acerca de -->
-                <div class="footer-lists">
-                    <h5>Acerca de </h5>
-                    <p>De tener alguna incidencia con el servicio wifi corporativo no dude en contactarse con mesa de
-                        ayuda.</p>
-                </div>
-
-                <!-- Contáctanos -->
-                <div class="footer-contact">
-                    <h5>Contáctanos</h5>
-                    <ul>
-                        <li>Anexo: 5000</li>
-                        <li>Celular : <a href="tel:+51997515827">+51 997515827</a></li>
-                        <li>Correo: <a href="mailto:mesadeayuda@gruposam.com.pe">mesadeayuda@gruposam.com.pe</a></li>
-                        <!-- <li>Lima, Perú 2024</li> -->
-                    </ul>
-                </div>
-
-                <!-- Redes Sociales (opcional) -->
-                <div class="footer-redes">
-                    <!-- Aquí puedes agregar íconos de redes sociales si lo deseas -->
-                </div>
+   <!--::::Pie de Pagina::::::-->
+   <footer class="pie-pagina">
+    <div class="grupo-1">
+        <div class="box">
+            <figure>
+                <a href="#">
+                    <img src="img/logo-footer.png" alt="Logo de SLee Dw">
+                </a>
+            </figure>
+        </div>
+        <div class="box">
+            <h2>SOBRE NOSOTROS</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, ipsa?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, ipsa?</p>
+        </div>
+        <div class="box">
+            <h2>SIGUENOS</h2>
+            <div class="red-social">
+                <a href="https://www.facebook.com/CasinoGoldenPalacePeru/" class="fa fa-facebook"></a>
+                <a href="https://www.instagram.com/casinogoldenpalaceperu/" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="https://youtube.com/channel/UCor3QCvAVayxD9GGQvmGdKw" class="fa fa-youtube"></a>
             </div>
-        </section>
-        <section></section>
-        <!-- Créditos -->
-        <section class="footer-copy">
-            <div class="wancho">
-                <div class="footer-copy-left">
-                    <p>&copy; 2024 Todos los Derechos Reservados: <a href="https://newport.com.pe/"
-                            style="text-decoration: none;">Grupo SAM</a></p>
-                </div>
-            </div>
-        </section>
-    </footer>
+        </div>
+    </div>
+    <div class="grupo-2">
+        <small>&copy; 2024 <b>******</b> - Todos los Derechos Reservados.</small>
+    </div>
+</footer>
+</body>
+</html>

@@ -103,8 +103,8 @@
 /* ANIMACIONES */
 /* ------------------------- */
 .popup.active {	transform: scale(1); opacity: 1; }
-.popup.active .h3 { animation: entradaTitulo .4s ease .5s forwards; }
-.popup.active .lord-icon { animation: entradaSubTitulo .4s ease .5s forwards; }
+.popup.active .h3 { animation: entradaTitulo .2s ease .3s forwards; }
+.popup.active .lord-icon { animation: entradaSubTitulo .2s ease .3s forwards; }
 .popup.active .title-container{ animation: entradaInputs 1s linear 1s forwards; }
 /* .popup.active .contenedor-poup{ animation: entradaInputs 1s linear 1s forwards; } */
 

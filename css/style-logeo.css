@@ -7,7 +7,8 @@
     --enlaces: #17a2b8;
     --text-container :#0000;
     --error: #be133b;
-    --fondo: rgb(192,190,219);
+    --fondo2: rgb(192,190,219);
+    --fondo: #EDEDED;
 }
 
 /* Body and container styling */
@@ -23,8 +24,8 @@
 .login-container {
  
 
-    background: rgb(218, 221, 226);
-    background: linear-gradient(to bottom, rgba(218, 221, 226, 1) 49%, rgba(255, 255, 255, 1) 75%);
+    /* background: rgb(218, 221, 226);
+    background: linear-gradient(to bottom, rgba(218, 221, 226, 1) 49%, rgba(255, 255, 255, 1) 75%); */
     padding: 1.25rem;
     border-radius: 0.75rem;
     background-color:  var(--text-color);
@@ -287,19 +288,6 @@ margin-top: 1rem;
     display: block;
 }
 
-
-/* .formulario__mensaje-exito {
-	font-size: 14px;
-	background-color: rgb(123, 204, 123);
-    color: var(--text-container);
-    text-align: center;
-    border-radius: 5px;
-	display: none;
-}
-
-.formulario__mensaje-exito-activo {
-	display: block;
-} */
 
 /* ----- -----  Estilos para Validacion ----- ----- */
 
