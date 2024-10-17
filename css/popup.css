@@ -101,40 +101,26 @@
 
 /* ------------------------- */
 /* ANIMACIONES */
-/* ------------------------- */
-.popup.active {	transform: scale(1); opacity: 1; }
-.popup.active .h3 { animation: entradaTitulo .2s ease .3s forwards; }
-.popup.active .lord-icon { animation: entradaSubTitulo .2s ease .3s forwards; }
-.popup.active .title-container{ animation: entradaInputs 1s linear 1s forwards; }
-/* .popup.active .contenedor-poup{ animation: entradaInputs 1s linear 1s forwards; } */
-
-@keyframes entradaTitulo {
-	from {
-		opacity: 0;
-		transform: translateY(-25px);
-	}
-
-	to {
-		transform: translateY(0);
-		opacity: 1;
-	}
-}
-
-@keyframes entradaSubtitulo {
-	from {
-		opacity: 0;
-		transform: translateY(25px);
-	}
-
-	to {
-		transform: translateY(0);
-		opacity: 1;
-	}
-}
-
-@keyframes entradaInputs {
-	from { opacity: 0; }
-	to { opacity: 1; }
-}
-
-/*para dispositivos ?*/
+/* ------------------------- *//*delay (tiempo debe espera la animación antes de comenzar)solo tiene entradaTitulo*/
+ .popup.active {	transform: scale(1); opacity: 1; }
+ .popup.active h3 { animation: entradaTitulo .8s ease  .3s forwards; }
+ .popup.active .title-container{ animation: entradaInputs 1s linear  forwards; }
+ 
+ 
+ @keyframes entradaTitulo {
+	 from {
+		 opacity: 0;
+		 transform: translateY(-25px);
+	 }
+ 
+	 to {
+		 transform: translateY(0);
+		 opacity: 1;
+	 }
+ }
+ 
+ 
+ @keyframes entradaInputs {
+	 from { opacity: 0; }
+	 to { opacity: 1; }
+ }
