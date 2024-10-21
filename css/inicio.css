@@ -13,14 +13,16 @@
 
 
 
-img, svg {
+/* img, svg {
     width: 10rem;
-}
+} */
 
 .image-container{
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 10rem;
+    margin-left: 40%
 }
 
 /* Body and container styling */
@@ -43,7 +45,7 @@ img, svg {
     /* padding: 0.5rem; */
     border-radius: 0.75rem;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-    width: 41rem;  /*ancho del contenido*/
+    width: 50rem;  /*ancho del contenido*/
 }
 
 /**/
@@ -56,7 +58,8 @@ img, svg {
     line-height:40px;
     /*para que esta centrado absolutamente */
     overflow:hidden; 
-    font-family: "Nerko One", cursive;
+    /* font-family: "Nerko One", cursive; */
+    font-family: "PT Sans", sans-serif;
     margin-top: 1rem;
 
     }
@@ -254,6 +257,50 @@ img, svg {
   background-color: var(--for-color);
 }
 
+
+
+/*ICONS EN SVG */
+.footer-icon   {
+    margin-right:10px ;
+    border: 2px solid var(--primary-color);
+    border-radius: 50%;
+    padding: 8px;
+    transition: all 300ms ease;
+    margin-bottom: 20px;
+    width: 38px;
+    height: 40px;
+    cursor: pointer;
+    transition: all 300ms ease;
+
+}
+
+.footer-icon:hover  {
+background-color: var(--for-color);
+}
+
+.footer-icon path{
+    fill: var(--primary-color); 
+}
+
+.footer-icon2 path {
+    fill: var(--blanco); 
+}
+
+.footer-icon2  {
+    width: 4px;
+    padding: 10px;
+}
+
+
+
+
+/**/
+
+
+a {
+    text-decoration: none !important;
+}
+
 .pie-pagina .grupo-1 .box li a {
     color: var(--primary-color); 
     text-decoration: none;
@@ -272,7 +319,7 @@ img, svg {
 .pie-pagina .grupo-1 .box p {
     margin-bottom: 10px; /* espacio entre cada línea */
 }
-.pie-pagina .grupo-1 .red-social a{
+.pie-pagina .grupo-1 .red-social a .footer-icon2{
     display: inline-block;
     text-decoration: none;
     width: 45px;
@@ -286,7 +333,9 @@ img, svg {
     transition: all 300ms ease;
     color: var(--blanco);
 }
-.pie-pagina .grupo-1 .red-social a:hover{
+
+
+.pie-pagina .grupo-1 .red-social a .footer-icon2:hover{
     background-color: var(--for-color);
 }
 .pie-pagina .grupo-2{

@@ -71,15 +71,19 @@
 	transition: .3s ease all;
 	transform: scale(0.7);
 	opacity: 0;
+    position: relative;
 }
 
 .popup .btn-cerrar-popup {
-	font-size: 16px;
+    font-size: 12px;
 	line-height: 16px;
-	display: block;
+	position: absolute; 
+    top: 8px;
+    right: 8px; 
 	text-align: right;
 	transition: .3s ease all;
 	color: #a39f9f;
+	width: 15px;
 }
 
 .popup .btn-cerrar-popup:hover {
@@ -94,6 +98,10 @@
 }
 
 
+.terminos-svg{
+    width:10rem;
+    height:10rem;
+}
 
 
 .popup form .title-container {
@@ -125,4 +133,3 @@
 	from { opacity: 0; }
 	to { opacity: 1; }
 }
-

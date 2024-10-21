@@ -7,17 +7,15 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Logeo</title>
-  <link rel="icon" href="/portal0/img/confeti-logo.png">
-  <link rel="stylesheet" href="./css/style-logeo.css">
-  <link rel="stylesheet" href="./css/popup.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
 
-  <script src="https://kit.fontawesome.com/9f44c2a1e9.js" crossorigin="anonymous"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-    rel="stylesheet">
+<!-- hoja de estilo de boostrap Compiled CSS and JS  v5.3 -->
+  <link rel="stylesheet" href="/css/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/js/bootstrap.bundle.min.js">
+   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="/css/style-logeo.css">
+   <link rel="stylesheet" href="/css/popup.css">
+  
+
 </head>
 
 <body class="login-body">
@@ -85,13 +83,18 @@
         <div class="contenedor-popup">
           <div class="overlay" id="overlay">
             <div class="popup" id="popup">
-              <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fa-solid fa-x"></i></i></a>
-              <h3>TERMINOS Y CONDICIONES</h3>
-              <script src="https://cdn.lordicon.com/lordicon.js"></script>
-              <lord-icon src="https://cdn.lordicon.com/vistbkts.json" trigger="hover"
-                colors="primary:#107c91,secondary:#16a9c7" style="width:10rem;height:10rem"></lord-icon>
-              <div class="title-container">Accede a la red Pública de la
-                empresa desde su dispositivo
+
+              <a href="#" class="btn-cerrar-popup" id="btn-cerrar-popup" aria-label="Cerrar popup">
+                <svg class="btn-cerrar-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                    <path d="M376.6 84.5c11.3-13.6 9.5-33.8-4.1-45.1s-33.8-9.5-45.1 4.1L192 206 56.6 43.5C45.3 29.9 25.1 28.1 11.5 39.4S-3.9 70.9 7.4 84.5L150.3 256 7.4 427.5c-11.3 13.6-9.5 33.8 4.1 45.1s33.8 9.5 45.1-4.1L192 306 327.4 468.5c11.3 13.6 31.5 15.4 45.1 4.1s15.4-31.5 4.1-45.1L233.7 256 376.6 84.5z" fill="#a39f9f"/>
+                </svg>
+            </a>
+
+            <h3>TERMINOS Y CONDICIONES</h3>
+            <svg class="terminos-svg" xmlns="http://www.w3.org/2000/svg" width="430" height="430" fill="none" viewBox="0 0 430 430"><g stroke="#004a94" stroke-linecap="round" stroke-linejoin="round" stroke-width="18"><path d="M134.94 295.06h160.12m-53.37 53.37h53.37m-160.12 0H215m35.81-161.16-5.2 32.28A40.8 40.8 0 0 1 231.33 242L215 254.79 198.67 242a40.83 40.83 0 0 1-14.28-22.44l-5.2-32.28s30.29-6.39 35.81-12.54c5.52 6.14 35.81 12.53 35.81 12.53"/><path d="M241.69 28.19H81.57v373.14h266.86V134.94z"/><path d="M241.69 28.19v106.75h106.74"/></g></svg>
+            <div class="title-container">Accede a la red Pública de la
+              empresa desde su dispositivo
+              
                 <iframe src="/portal0/terminos.html" scrolling="yes"></iframe>
 
                 <form action="">
