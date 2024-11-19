@@ -26,7 +26,7 @@
     padding: 1.25rem;
     border-radius: 0.75rem;
     background-color:  var(--text-color);
-    font-family: "PT Sans", sans-serif;
+    font-family: "PTSans-Regular";
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
     width: 25rem;
 }
